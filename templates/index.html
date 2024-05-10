@@ -46,7 +46,7 @@
                 <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
                     <div class="avatar"><img src="{{ obj.author.profile_pic.url }}" alt="..." class="img-fluid"></div>
                     <div class="title"><span>{{ obj.author }}</span></div></a>
-                  <div class="date"><i class="icon-clock"></i>{{ obj.timestamp|timesince }} ago</div>
+                  <div class="date"><i class="icon-clock"></i>{{ obj.created_on }} ago</div>
                   <div class="comments"><i class="icon-comment"></i>{{ obj.get_comments.count }}</div>
                 </footer>
               </div>

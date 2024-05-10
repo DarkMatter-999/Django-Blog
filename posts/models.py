@@ -9,6 +9,7 @@ from tinymce.models import HTMLField
 User =get_user_model()
 
 class Author(models.Model):
+    id = models.BigAutoField(primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     profile_pic = models.ImageField()
 
